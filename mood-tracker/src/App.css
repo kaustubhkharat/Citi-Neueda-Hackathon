@@ -1,0 +1,284 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: linear-gradient(to bottom right, #6a0dad, #ffffff);
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* App Container */
+.App {
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.App-logo {
+  height: 40vmin;
+  animation: App-logo-fadeIn 2s ease-in;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.15));
+}
+
+@keyframes App-logo-fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear, App-logo-fadeIn 2s ease-in;
+  }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Header */
+.App-header {
+  margin-bottom: 2rem;
+}
+
+.App-header nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.App-header button {
+  background: #ffffff;
+  color: #6a0dad;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.App-header button:hover {
+  background: #6a0dad;
+  color: #ffffff;
+}
+
+/* Main Content */
+main {
+  margin-top: 2rem;
+}
+
+/* Login Component */
+.login-container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.login-container button {
+  width: 100%;
+  background: #ffffff;
+  color: #6a0dad;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.login-container button:hover {
+  background: #6a0dad;
+  color: #ffffff;
+}
+
+/* Mood Component */
+.mood-container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mood-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mood-list {
+  margin-bottom: 1rem;
+}
+
+.mood-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mood-item p {
+  font-size: 1.2rem;
+}
+
+.mood-item small {
+  font-size: 0.9rem;
+  color: #dcdcdc;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  background: #ffffff;
+  color: #6a0dad;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background: #6a0dad;
+  color: #ffffff;
+}
+
+/* Poll Component */
+.poll-container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.poll-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.poll-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.poll-item h3 {
+  font-size: 1.5rem;
+}
+
+.poll-item button {
+  margin: 0.5rem 0.5rem 0 0;
+  background: #f3eaff;
+  color: #6a0dad;
+  border: 1px solid #d1b3ff;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.poll-item button:hover {
+  background: #6a0dad;
+  color: #fff;
+  border: 1px solid #6a0dad;
+}
+
+/* Poll Option Inputs */
+.create-poll input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 0.7rem;
+  border: 1px solid #d1b3ff;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  background: rgba(255,255,255,0.8);
+  color: #6a0dad;
+  transition: border 0.2s;
+}
+
+.create-poll input[type="text"]:focus {
+  border: 1.5px solid #6a0dad;
+  outline: none;
+  background: #f3eaff;
+}
+
+/* Shame Component */
+.shame-container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.shame-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.shame-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.shame-item p {
+  font-size: 1.2rem;
+}
+
+.shame-item small {
+  font-size: 0.9rem;
+  color: #dcdcdc;
+}
+
+.shame-item button {
+  margin-top: 0.5rem;
+}
